@@ -55,7 +55,7 @@ with st.form("user_input_form"):
     green_vegetables_consumption = st.number_input("Enter the amount of green vegetables you consume weekly (per 100gram):", min_value=0, max_value=100, step=1)
     fruit_consumption = st.number_input("Enter the amount of fruit you consume weekly (per 100gram):", min_value=0, max_value=100, step=1)
     fried_potato_consumption = st.number_input("Enter the amount of fried potatoes you consume weekly (per 100gram):", min_value=0, max_value=100, step=1)
-    alcohol_consumption = st.number_input("Enter the number of alcohol units consumed per week:", min_value=0, max_value=50, step=1)
+    alcohol_consumption = st.number_input("Enter the number of alcohol units consumed per week (in ml):", min_value=0, max_value=50, step=1)
     
     # Submit button
     submit_button = st.form_submit_button("Predict Heart Disease")
