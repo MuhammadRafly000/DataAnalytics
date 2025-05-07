@@ -14,7 +14,7 @@ output = 'CVD_cleaned.csv'
 gdown.download(url, output, quiet=False)
 
 # Load the dataset
-df = pd.read_csv(output)
+df = pd.read_csv('CVD_cleaned.csv')
 
 # Mengonversi 'No' dan 'Yes' di kolom target menjadi angka 0 dan 1
 df['Heart_Disease'] = df['Heart_Disease'].map({'No': 0, 'Yes': 1})
